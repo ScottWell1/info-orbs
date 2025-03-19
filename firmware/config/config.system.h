@@ -78,7 +78,8 @@
 #endif
 
 #ifndef NTP_SERVER
-    #define NTP_SERVER "pool.ntp.org"
+    //#define NTP_SERVER "pool.ntp.org"
+    #define NTP_SERVER "192.168.1.1"
 #endif
 
 #ifndef SCREEN_SIZE

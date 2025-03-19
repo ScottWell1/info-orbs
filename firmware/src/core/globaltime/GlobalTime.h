@@ -32,6 +32,7 @@ public:
     int getHour();
     int getHour24();
     String getHourPadded();
+    String getHourString();
     int getMinute();
     String getMinutePadded();
     time_t getUnixEpoch();

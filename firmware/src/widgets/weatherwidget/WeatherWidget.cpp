@@ -118,7 +118,8 @@ void WeatherWidget::displayClock(int displayIndex) {
     const String weekDay = m_time->getWeekday();
     m_manager.drawCentreString(weekDay, centre, dayOfWeekY, 22);
 
-    m_manager.drawString(m_time->getHourPadded(), centre - 10, clockY, 66, Align::MiddleRight);
+    //m_manager.drawString(m_time->getHourPadded(), centre - 10, clockY, 66, Align::MiddleRight);   //24hr
+    m_manager.drawString(m_time->getHourString(), centre - 10, clockY, 66, Align::MiddleRight);  //12hr
     m_manager.drawString(":", centre, clockY, 66, Align::MiddleCenter);
     m_manager.drawString(m_time->getMinutePadded(), centre + 10, clockY, 66, Align::MiddleLeft);
 }

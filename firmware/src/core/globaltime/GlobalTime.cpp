@@ -84,6 +84,10 @@ String GlobalTime::getHourPadded() {
     }
 }
 
+String GlobalTime::getHourString() {
+    return String(m_hour);
+}
+
 int GlobalTime::getMinute() {
     return m_minute;
 }
